@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.ContentValues
+import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -252,6 +253,8 @@ class PreviewPoint:AppCompatActivity(), OnMapReadyCallback ,DeleteDialogFragment
         val latLng = Gson().fromJson(point.pointInfo, MarkerOptions::class.java).position
         var marker=map.addMarker(MarkerOptions().position(latLng))
         var onMarker: Marker? =null
+        val pref=getSharedPreferences("data", Context.MODE_PRIVATE)
+        map.mapType = pref.getInt("map_type",1)
         map.uiSettings.isMapToolbarEnabled=false
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 17f))
         map.setOnMapLongClickListener {
