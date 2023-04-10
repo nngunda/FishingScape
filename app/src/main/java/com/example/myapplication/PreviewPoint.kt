@@ -159,11 +159,7 @@ class PreviewPoint:AppCompatActivity(), OnMapReadyCallback ,DeleteDialogFragment
                             val byteArrayOutputStream = ByteArrayOutputStream()
                             imagesBitmap[x].compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
                             imagesBitmap[x].recycle()
-                            byteArrayOutputStream.toByteArray().let { b->
-                                println(b.size)
-                                imagesBinary+=b
-                            }
-                            //imagesBinary+=byteArrayOutputStream.toByteArray()
+                            imagesBinary+=byteArrayOutputStream.toByteArray()
                         }
                         bitmapData.writableDatabase.use { db->
                             var x=0

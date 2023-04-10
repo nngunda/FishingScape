@@ -140,11 +140,7 @@ class SettingPoint : AppCompatActivity() {
                     val byteArrayOutputStream = ByteArrayOutputStream()
                     imagesBitmap[x].compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
                     imagesBitmap[x].recycle()
-                    byteArrayOutputStream.toByteArray().let { b->
-                        println(b.size)
-                        imagesBinary+=b
-                    }
-                    //imagesBinary+=byteArrayOutputStream.toByteArray()
+                    imagesBinary+=byteArrayOutputStream.toByteArray()
                 }
                 pointData.writableDatabase.use { db->
                     val cv=ContentValues().apply {
