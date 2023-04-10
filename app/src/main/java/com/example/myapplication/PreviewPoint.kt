@@ -110,7 +110,7 @@ class PreviewPoint:AppCompatActivity(), OnMapReadyCallback ,DeleteDialogFragment
                     } else {
                         MediaStore.Images.Media.getBitmap(contentResolver, uris[x])
                     }
-                val size=1200
+                val size=810
                 if(bitmap.height>size||bitmap.width>size){
                     bitmap = if(bitmap.height>bitmap.width){
                         val width=bitmap.width*size/bitmap.height
@@ -159,7 +159,11 @@ class PreviewPoint:AppCompatActivity(), OnMapReadyCallback ,DeleteDialogFragment
                             val byteArrayOutputStream = ByteArrayOutputStream()
                             imagesBitmap[x].compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
                             imagesBitmap[x].recycle()
-                            imagesBinary+=byteArrayOutputStream.toByteArray()
+                            byteArrayOutputStream.toByteArray().let { b->
+                                println(b.size)
+                                imagesBinary+=b
+                            }
+                            //imagesBinary+=byteArrayOutputStream.toByteArray()
                         }
                         bitmapData.writableDatabase.use { db->
                             var x=0
