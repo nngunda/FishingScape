@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2415" />
+        <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/add_hole.xml" value="0.1205" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/button_background.xml" value="0.121" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/button_backgrownd.xml" value="0.2485" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/delete_pictuer_button.xml" value="0.248" />
@@ -12,6 +13,7 @@
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/image_button.xml" value="0.257" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/location_button.xml" value="0.144" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/map_type_button.xml" value="0.136" />
+        <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/point_back.xml" value="0.248" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/preview_back.xml" value="0.248" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/tool_button_layout.xml" value="0.242" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_gyo.xml" value="0.25416666666666665" />
