@@ -37,11 +37,8 @@ class SearchListFragment:Fragment() {
         super.onViewCreated(view, savedInstanceState)
         var searchWard= arguments?.getString("search")
         searchWard=searchWard?.trim()
-        var sqlTextPointName=searchWard?.replace("[\\s　]+".toRegex(), "%' OR point_name like'%")
-        sqlTextPointName= "point_name like'%$sqlTextPointName%'"
-        var sqlTextFishNames=searchWard?.replace("[\\s　]+".toRegex(), "%' OR fish_names like'%")
-        sqlTextFishNames= " OR fish_names like'%$sqlTextFishNames%'"
-        val sqlText=sqlTextPointName+sqlTextFishNames
+        var sqlText=searchWard?.replace("[\\s　]+".toRegex(), "%' and point_name||fish_names like'%")
+        sqlText="point_name||fish_names like'%$sqlText%'"
         helper.readableDatabase.use { db->
             db.rawQuery("SELECT point_name,fish_names from point WHERE $sqlText",null).use { cursor->
                 if(cursor.moveToFirst()){
