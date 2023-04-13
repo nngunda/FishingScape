@@ -168,8 +168,7 @@ class SettingPoint : AppCompatActivity() {
                     }
                 }
                 pointData.readableDatabase.use{
-                    it.query("point", arrayOf("_id","point_info"),null,
-                        null,null,null,null,null).use { cursor->
+                    it.rawQuery("select _id,point_info from point",null).use { cursor->
                         if(cursor.moveToFirst()){
                             do {
                                 if(cursor.getString(1)==marker){
