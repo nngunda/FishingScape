@@ -17,7 +17,7 @@
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/preview_back.xml" value="0.248" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/tool_button_layout.xml" value="0.242" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_gyo.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.136" />
+        <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.152" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_setting_point.xml" value="0.2" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chipfragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/astoro-ho/AndroidStudioProjects/MyApplication/app/src/main/res/layout/edit_text_fragment.xml" value="0.25416666666666665" />
@@ -49,5 +49,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
   </component>
 </project>
